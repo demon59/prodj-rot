@@ -18,7 +18,6 @@ from django.urls import path
 from . import viws
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('about/', viws.about),
     path('', viws.home),
+    path('reverse', viws.reverse, name='reverse'),
 ]
